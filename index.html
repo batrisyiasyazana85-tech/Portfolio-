@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: white;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    .hero-text {
+        max-width: 500px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+        margin: 0;
+        color: #38bdf8;
+    }
+
+    .hero-text p {
+        color: #cbd5e1;
+        line-height: 1.6;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #38bdf8;
+    }
+
+    /* SECTION */
+    .section {
+        margin-bottom: 40px;
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    h2 {
+        color: #38bdf8;
+        margin-bottom: 10px;
+    }
+
+    .skills span {
+        display: inline-block;
+        background: #334155;
+        padding: 6px 12px;
+        margin: 5px;
+        border-radius: 8px;
+        font-size: 13px;
+    }
+
+    .project {
+        margin-top: 10px;
+        padding: 15px;
+        background: #334155;
+        border-radius: 12px;
+    }
+
+    /* 🔥 BIGGER FULL IMAGE GRID */
+    .project-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .project-images img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: #0f172a;
+    border-radius: 12px;
+    border: 2px solid #38bdf8;
+    transition: 0.3s;
+}
+
+    .project-images img:hover {
+        transform: scale(1.05);
+    }
+
+    footer {
+        text-align: center;
+        color: #94a3b8;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+    a {
+        color: #38bdf8;
+    }
+
+    /* mobile responsive */
+    @media (max-width: 768px) {
+        .project-images {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>SYAZANA BATRISYIA BINTI AZHAR</h1>
+            <p>
+               Bachelor of Information Technology (Hons.), Universiti Kebangsaan Malaysia (UKM)<br>
+                Passionate in building modern systems, databases, and automation solutions.
+            </p>
+        </div>
+
+        <img src="profile.png" class="profile-img">
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section">
+        <h2>About Me</h2>
+        <p>
+Information Technology student with a diploma background, currently pursuing a degree. Skilled in web-based system development, database management, and data analysis using Python, SQL, and Microsoft tools (Excel, Power BI, Power Apps, Power Automate), with experience in building applications and improving efficiency through data-driven solutions.
+        </p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>Python</span>
+            <span>PHP</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>MySQL</span>
+            <span>Power BI</span>
+            <span>Excel</span>
+            <span>CCNA</span>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+        <h2>Projects</h2>
+
+         <div class="project">
+            <b> Final Year Project: ArcheryGo Web-Based Archery Management System</b>
+            <p>ArcheryGo is a web-based system developed using PHP and XAMPP for UKM Archery Club to manage attendance, performance, and activities, with an integrated chatbot to improve user support and interaction.</p>
+
+            <div class="project-images">
+                <img src="fyp1.png">
+                <img src="fyp2.png">
+                <img src="fyp3.png">
+            </div>
+        </div>
+
+         <div class="project">
+            <b> Sales Department Information System Project (Diploma)</b>
+            <p>Internship Developed a sales department system during internship using Power Automate, PowerApps, and SharePoint to support data reporting, visualization, and document sharing, improving workflow efficiency and decision-making.</p>
+
+            <div class="project-images">
+                <img src="i1.png">
+                <img src="i2.png">
+                <img src="i3.png">
+            </div>
+        </div>
+
+        <div class="project">
+            <b>Network Design Project</b>
+            <p>Designed a scalable and secure network for Fresh Blooms Trading by implementing VLAN segmentation to separate departments and reduce broadcast traffic. The network was upgraded to a hierarchical structure with improved performance using EtherChannel and QoS for traffic prioritization. IP addressing was subnetted per VLAN, and security was enhanced using DHCP snooping, port security, and SSH configuration.</p>
+
+            <div class="project-images">
+                <img src="ccna1.png">
+                <img src="ccna2.png">
+                <img src="ccna3.png">
+            </div>
+        </div>
+
+        <div class="project">
+            <b>Mobile Application Programming Project</b>
+            <p>A mobile application developed using Android Studio and Kotlin to help small-scale farmers connect directly with buyers. It allows users to list products, manage orders, and share product locations through a simple and user-friendly interface. The project aims to improve market access, increase sales, and reduce dependency on middlemen.</p>
+
+            <div class="project-images">
+                <img src="pj1.png">
+                <img src="pj2.png">
+                <img src="pj3.png">
+            </div>
+        </div>
+
+        <div class="project">
+            <b>Product Development Project</b>
+            <p>Portable folding table designed using AutoCAD.</p>
+
+            <div class="project-images">
+                <img src="campora1.png">
+                <img src="campora2.png">
+                <img src="campora3.png">
+            </div>
+             <div class="project">
+            <b>AWS Academy – Cloud Foundations (Completed, 98.2%)</b>
+            <p>Hands-on experience with AWS core services including IAM, EC2, VPC, S3, and basic cloud architecture through labs and practical activities.</p>
+
+            <div class="project-images">
+                <img src="cloud 1.png">
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section">
+        <h2>Contact</h2>
+        <p>Email: yourname@email.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </div>
+
+    <footer>
+        © 2026 Your Name | Portfolio
+    </footer>
+
+</div>
+
+</body>
+</html>
